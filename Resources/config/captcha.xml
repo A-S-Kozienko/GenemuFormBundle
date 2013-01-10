@@ -17,7 +17,7 @@
             <argument type="service" id="session" />
         </service>
 
-        <service id="genemu.form.captcha.service" class="Genemu\Bundle\FormBundle\Captcha\CaptchaService" public="false">
+        <service id="genemu.form.captcha.service" class="Genemu\Bundle\FormBundle\Captcha\CaptchaService">
             <argument type="service" id="genemu.form.captcha.code_generator" />
             <argument type="service" id="genemu.form.captcha.font_resolver" />
             <argument type="service" id="genemu.form.captcha.storage" />

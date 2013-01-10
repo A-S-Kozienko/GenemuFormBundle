@@ -75,6 +75,18 @@ class CaptchaService
     }
 
     /**
+     * Returns code for captcha $name
+     * Must be used only for testing purposes
+     *
+     * @param $name
+     * @return string
+     */
+    public function getCode($name)
+    {
+        return $this->captchaStorage->getCode($name);
+    }
+
+    /**
      * @param string $name
      *
      * @return array
